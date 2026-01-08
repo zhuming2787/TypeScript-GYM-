@@ -4,7 +4,9 @@
   "description": "练习typescript练习，提高TS。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts,.vue",
+    "lint:fix": "eslint . --ext .ts,.vue --fix"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,10 @@
   },
   "homepage": "https://github.com/zhuming2787/TypeScript-GYM-#readme",
   "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "eslint-config-prettier": "^10.1.8",
     "typescript": "^5.9.3"
   }
 }

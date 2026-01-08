@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* 基础配置 */
     "target": "ES2020",                          // 适配现代语法
-    "module": "ESNext",                          // 模块系统
+    "module": "ESNext",                          // 推荐用 ESNext（或保留 ES2020 也可）
     "lib": ["ES2020"],                           // 依赖的 ES 库
     "rootDir": "./src",                          // 源码目录
     /* 类型体操核心配置 */
@@ -14,8 +14,10 @@
     "baseUrl": "./",                             // 基础路径
     "paths": { "@/*": ["src/*"] },               // 路径别名（可选，方便导入）
     "skipLibCheck": true,                        // 跳过库类型检查（加速）
-    "forceConsistentCasingInFileNames": true     // 强制文件名大小写一致
+    "forceConsistentCasingInFileNames": true,    // 强制文件名大小写一致
+    "moduleResolution": "node",                  // 核心：按 Node 规则解析模块
+    "esModuleInterop": true                      // 核心：兼容 CommonJS/ES 模块
   },
-  "include": ["src/**/*"],                       // 只检查 src 目录下的文件
-  "exclude": ["node_modules"]                    // 排除 node_modules
+  "include": ["src/**/*", "src/easy/**/*"],                    // 简化：src 下所有文件（含子目录）
+  "exclude": ["node_modules"]                    // 排除第三方依赖
 }
