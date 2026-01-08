@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* 基础配置 */
+    "target": "ES2020",                          // 适配现代语法
+    "module": "ESNext",                          // 模块系统
+    "lib": ["ES2020"],                           // 依赖的 ES 库
+    "rootDir": "./src",                          // 源码目录
+    /* 类型体操核心配置 */
+    "strict": true,                              // 必开！严格类型检查
+    "noEmit": true,                              // 关键：不生成 JS 文件（只做类型校验）
+    "noImplicitAny": true,                       // 禁止隐式 any
+    "strictNullChecks": true,                    // 严格 null 检查
+    /* 路径/便利配置 */
+    "baseUrl": "./",                             // 基础路径
+    "paths": { "@/*": ["src/*"] },               // 路径别名（可选，方便导入）
+    "skipLibCheck": true,                        // 跳过库类型检查（加速）
+    "forceConsistentCasingInFileNames": true     // 强制文件名大小写一致
+  },
+  "include": ["src/**/*"],                       // 只检查 src 目录下的文件
+  "exclude": ["node_modules"]                    // 排除 node_modules
+}

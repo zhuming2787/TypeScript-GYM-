@@ -1,0 +1,23 @@
+{
+  "name": "typescript-gym-",
+  "version": "1.0.0",
+  "description": "练习typescript练习，提高TS。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuming2787/TypeScript-GYM-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuming2787/TypeScript-GYM-/issues"
+  },
+  "homepage": "https://github.com/zhuming2787/TypeScript-GYM-#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}
